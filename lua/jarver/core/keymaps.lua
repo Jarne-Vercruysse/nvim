@@ -24,3 +24,10 @@ set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
 set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+
+-- [[FOLDING]]
+vim.keymap.set("n", "<leader>fc", "zc", { desc = "Close fold" })
+vim.keymap.set("n", "<leader>fo", "zo", { desc = "Open fold" })
+vim.keymap.set("n", "<leader>ft", "za", { desc = "Toggle fold" })
+vim.keymap.set("n", "<leader>fO", "zR", { desc = "Open all folds" })
+vim.keymap.set("n", "<leader>fC", "zM", { desc = "Close all folds" })
