@@ -26,6 +26,15 @@ opt.undofile = true
 -- When doing regex see life updates
 opt.inccommand = "split"
 
+-- LSP Window diagnostic
+opt.winborder = "rounded"
+
+-- Completions
+-- opt.completeopt = { "menu", "menuone", "noselect" }
+-- opt.shortmess:append "c"
+-- opt.pumheight = 12
+-- opt.pumblend = 16
+
 -- shada == shared data
 --:oldfiles or :o Display files with marks stored in the shada file
 -- :rshada or :rs Read the shada file
@@ -33,6 +42,6 @@ opt.inccommand = "split"
 --opt.shada = { "'10", "<0", "s10", "h" }
 
 vim.schedule(function()
-	opt.clipboard = "unnamedplus"
+  opt.clipboard = "unnamedplus"
 end)
 opt.formatoptions:remove("o")
