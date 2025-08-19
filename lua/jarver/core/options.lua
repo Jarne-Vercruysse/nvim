@@ -28,6 +28,10 @@ opt.inccommand = "split"
 
 -- LSP Window diagnostic
 opt.winborder = "rounded"
+opt.foldcolumn = "0"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
 
 -- Completions
 -- opt.completeopt = { "menu", "menuone", "noselect" }
