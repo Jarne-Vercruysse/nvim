@@ -3,8 +3,6 @@ local opt = vim.opt
 opt.inccommand = "split"
 opt.smartcase = true
 opt.ignorecase = true
-opt.smartcase = true
-opt.ignorecase = true
 opt.signcolumn = "yes"
 
 opt.number = true
