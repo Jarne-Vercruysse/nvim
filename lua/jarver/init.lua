@@ -6,4 +6,4 @@ require(core .. "keymaps")
 require(core .. "options")
 require(core .. "autocmds")
 
-require("jarver.lazy")
+require "jarver.lazy"
