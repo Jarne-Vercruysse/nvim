@@ -1,5 +1,5 @@
 local M = {}
-local parsers = { "rust", "lua", "just" }
+local parsers = { "rust", "lua", "just", "html" }
 
 M.setup = function()
   local ts = require("nvim-treesitter")
