@@ -1,3 +1,4 @@
+-- https://github.com/ibhagwan/fzf-lua
 local M = {}
 local map = vim.keymap.set
 
@@ -19,8 +20,13 @@ M.setup = function()
 
   -- [[LSP]]
   map("n", "<leader>slr", require("fzf-lua").lsp_references)
-  map("n", "<leader>slr", require("fzf-lua").lsp_references)
-  map("n", "<leader>sd", require("fzf-lua").diagnostics_document)
+  map("n", "<leader>sld", require("fzf-lua").lsp_definitions)
+  map("n", "<leader>sli", require("fzf-lua").lsp_incoming_calls)
+  map("n", "<leader>slo", require("fzf-lua").lsp_outgoing_calls)
+
+  -- [[DIAGNOSTICS]]
+  map("n", "<leader>sdd", require("fzf-lua").diagnostics_document)
+  map("n", "<leader>sdw", require("fzf-lua").diagnostics_workspace)
 end
 
 M.setup()
