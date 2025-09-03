@@ -5,6 +5,7 @@ M.setup = function()
     formatters_by_ft = {
       lua = { "stylua" },
       yaml = { "yamlfmt" },
+      javascriptreact = { "prettierd" },
     },
 
     format_on_save = {
