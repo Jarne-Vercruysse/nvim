@@ -1,5 +1,6 @@
 local M = {}
-local parsers = { "rust", "lua", "just", "html", "css", "javascript", "typescript" }
+local parsers = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "jsx" }
+local types = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "javascriptreact" }
 
 M.setup = function()
   local ts = require("nvim-treesitter")
@@ -9,7 +10,7 @@ M.setup = function()
   local aug = vim.api.nvim_create_augroup("JarverTS", { clear = true })
   vim.api.nvim_create_autocmd("FileType", {
     group = aug,
-    pattern = parsers,
+    pattern = types,
     callback = function()
       -- start treesitter highlight
       vim.treesitter.start()
@@ -20,16 +21,6 @@ M.setup = function()
 
       -- indent with TS
       vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-
-      -- -- Voeg filetype-detectie voor JSX/TSX toe
-      -- vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-      --   pattern = { "*.jsx" },
-      --   command = "set filetype=javascriptreact",
-      -- })
-      -- vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-      --   pattern = { "*.tsx" },
-      --   command = "set filetype=typescriptreact",
-      -- })
     end,
   })
 
