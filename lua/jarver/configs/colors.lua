@@ -3,6 +3,7 @@ local M = {}
 M.themes = {
   gruvbox = "gruvbox",
   kanagawa = "kanagawa",
+  catpuccin = "catppuccin",
 }
 
 M.current = M.themes.gruvbox

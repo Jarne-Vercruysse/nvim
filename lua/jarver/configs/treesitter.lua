@@ -1,5 +1,6 @@
 local M = {}
-local parsers = { "rust", "lua", "just", "html" }
+local parsers = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "jsx" }
+local types = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "javascriptreact" }
 
 M.setup = function()
   local ts = require("nvim-treesitter")
@@ -9,7 +10,7 @@ M.setup = function()
   local aug = vim.api.nvim_create_augroup("JarverTS", { clear = true })
   vim.api.nvim_create_autocmd("FileType", {
     group = aug,
-    pattern = parsers,
+    pattern = types,
     callback = function()
       -- start treesitter highlight
       vim.treesitter.start()
@@ -22,6 +23,9 @@ M.setup = function()
       vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
     end,
   })
+
+  -- Voeg een keybind toe om vim.treesitter.start() handmatig te triggeren
+  vim.keymap.set("n", "<leader>rt", ":lua vim.treesitter.start()<CR>", { noremap = true, silent = true })
 end
 
 M.setup()
