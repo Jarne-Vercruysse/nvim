@@ -17,8 +17,9 @@ return {
         typeHints = true,
       },
       imports = {
-        granularity = { group = "module" },
+        granularity = { group = "crate" },
         prefix = "self",
+        group = { "crate" },
       },
       completion = {
         postfix = { enable = true },
