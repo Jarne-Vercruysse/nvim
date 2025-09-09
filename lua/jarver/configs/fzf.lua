@@ -19,10 +19,11 @@ M.setup = function()
   end)
 
   -- [[LSP]]
-  map("n", "<leader>slr", require("fzf-lua").lsp_references)
-  map("n", "<leader>sld", require("fzf-lua").lsp_definitions)
-  map("n", "<leader>sli", require("fzf-lua").lsp_incoming_calls)
-  map("n", "<leader>slo", require("fzf-lua").lsp_outgoing_calls)
+  map("n", "<leader>lr", require("fzf-lua").lsp_references)
+  map("n", "<leader>ld", require("fzf-lua").lsp_definitions)
+  map("n", "<leader>li", require("fzf-lua").lsp_incoming_calls)
+  map("n", "<leader>lo", require("fzf-lua").lsp_outgoing_calls)
+  map("n", "<leader>lc", require("fzf-lua").lsp_code_actions)
 
   -- [[DIAGNOSTICS]]
   map("n", "<leader>sdd", require("fzf-lua").diagnostics_document)
