@@ -17,7 +17,7 @@ return {
         typeHints = true,
       },
       imports = {
-        granularity = { group = "crate" },
+        granularity = { enforce = true, group = "crate" },
         prefix = "self",
         group = { "crate" },
       },
