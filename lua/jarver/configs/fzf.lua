@@ -13,7 +13,7 @@ M.setup = function()
   map("n", "<leader>sb", require("fzf-lua").buffers)
   map("n", "<leader>sg", require("fzf-lua").grep)
   map("n", "<leader>sc", function()
-    require("fzf-lua").files({ cwd = "~/.config/nvim-min/" })
+    require("fzf-lua").files({ cwd = "~/.config/nvim/" })
     -- This would make sure it works on any OS guess we will see
     --require("fzf-lua").files({ cwd = vim.fn.expand("~/.config/nvim-min/") })
   end)
