@@ -6,6 +6,7 @@ M.setup = function()
       lua = { "stylua" },
       yaml = { "yamlfmt" },
       javascriptreact = { "prettierd" },
+      javascript = { "prettierd" },
       rust = { lsp_format = "first", "rustfmt" },
     },
 
