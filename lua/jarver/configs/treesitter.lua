@@ -24,7 +24,6 @@ M.setup = function()
     end,
   })
 
-  -- Voeg een keybind toe om vim.treesitter.start() handmatig te triggeren
   vim.keymap.set("n", "<leader>rt", ":lua vim.treesitter.start()<CR>", { noremap = true, silent = true })
 end
 
