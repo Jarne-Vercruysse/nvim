@@ -23,7 +23,7 @@ M.setup = function()
       lsp_format = "fallback",
       timeout_ms = 500,
     })
-  end, { desc = "Format file or range (conform.nvim)" })
+  end, { desc = "Format file" })
 end
 
 M.setup()

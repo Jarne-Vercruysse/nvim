@@ -32,6 +32,9 @@ set("n", "<leader>fc", "zc", { desc = "Close fold" })
 set("n", "<leader>fO", "zR", { desc = "Open all folds" })
 set("n", "<leader>fC", "zM", { desc = "Close all folds" })
 
--- [[SOURCE]]
+-- [[FILE]]
 --set("n", "<leader>x", "<cmd>.lua<CR>", { desc = "Execute the current line" })
 set("n", "<leader><leader>s", "<cmd>source %<CR>", { desc = "Execute the current file" })
+
+-- [[REGEX]]
+set("n", "<leader>q", "<cmd>noh<cr>", { desc = "Stop hightlighting after regex search " })
