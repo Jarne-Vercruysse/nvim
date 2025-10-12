@@ -14,7 +14,7 @@ return {
       inlayHints = {
         lifetimeElisionHints = { enable = true, useParameterNames = true },
         parameterHints = true,
-        typeHints = true,
+        typeHints = { enable = true },
       },
       imports = {
         granularity = { enforce = true, group = "crate" },
