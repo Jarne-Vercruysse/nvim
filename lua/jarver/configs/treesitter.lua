@@ -1,5 +1,5 @@
 local M = {}
-local parsers = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "jsx" }
+local parsers = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "jsx", "qmljs" }
 local types = { "rust", "lua", "just", "html", "css", "javascript", "typescript", "javascriptreact" }
 
 M.setup = function()

@@ -5,6 +5,7 @@ vim.lsp.enable("ts_ls")
 vim.lsp.enable("superhtml")
 vim.lsp.enable("cssls")
 vim.lsp.enable("stylelint_lsp")
+vim.lsp.enable("qmlls")
 
 vim.keymap.set("n", "<leader>tih", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
